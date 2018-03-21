@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // 元の画面に戻る
+    @IBAction func goBack(_ segue:UIStoryboardSegue) {}
+    
+    
+    // カメラ画面に進む
+    @IBAction func goNext(_ sender:UIButton) {
+        let next = storyboard!.instantiateViewController(withIdentifier: "cameraview")
+        self.present(next,animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +29,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    
+    
+    
 }
 

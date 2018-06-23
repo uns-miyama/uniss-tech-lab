@@ -1,0 +1,12 @@
+使い方
+１（初回のみ）
+モジュールを追加する
+pip install git+https://github.com/dpallot/simple-websocket-server.git
+
+２　webサーバー立ち上げ
+python -m SimpleHTTPServer 8001
+
+３　webrtcサーバー立ち上げ
+python signaling.py
+
+※python3に未対応

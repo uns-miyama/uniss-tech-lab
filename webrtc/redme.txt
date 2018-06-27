@@ -1,7 +1,9 @@
-使い方
+﻿使い方
 １（初回のみ）
 モジュールを追加する
 pip install git+https://github.com/dpallot/simple-websocket-server.git
+または
+python -m pip install git+https://github.com/dpallot/simple-websocket-server.git
 
 ２　webサーバー立ち上げ
 python -m SimpleHTTPServer 8001

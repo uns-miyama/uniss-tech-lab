@@ -14,7 +14,7 @@ def run(host, port, ctx, handler):
     print('Server Stops - %s:%s' % (host, port))
 
 if __name__ == '__main__':
-    host = 'localhost'
+    host = ''
     port = 8001
 
     ctx = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)

@@ -27,6 +27,6 @@ parser.add_option("--cert", default='./cert.pem', type='string', action="store",
 parser.add_option("--key", default='./cert.pem', type='string', action="store", dest="key", help="key (./key.pem)")
 parser.add_option("--ver", default=ssl.PROTOCOL_TLSv1, type=int, action="store", dest="ver", help="ssl version")
 (options, args) = parser.parse_args()
-server = SimpleSSLWebSocketServer('localhost', 8000, SimpleEcho, options.cert, options.key, version=options.ver)
+server = SimpleSSLWebSocketServer('', 8000, SimpleEcho, options.cert, options.key, version=options.ver)
 
 server.serveforever()

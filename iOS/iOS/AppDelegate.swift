@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  iOS
 //
-//  Created by 藤木　博志 on 2018/02/20.
-//  Copyright © 2018年 uniss. All rights reserved.
+//  Created by 藤木博志 on 2018/09/01.
+//  Copyright © 2018年 藤木博志. All rights reserved.
 //
 
 import UIKit

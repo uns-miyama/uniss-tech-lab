@@ -6,18 +6,7 @@ pip install git+https://github.com/dpallot/simple-websocket-server.git
 python -m pip install git+https://github.com/dpallot/simple-websocket-server.git
 
 ２　webサーバー立ち上げ
-python -m SimpleHTTPServer 8001
+python -m httpdSever.py
 
 ３　webrtcサーバー立ち上げ
 python signaling.py
-
-※自動起動
-$sudo nano /etc/rc.local
-
-exit 0 の前に
-
-python3 (実際のpath)/simpleserve.py
-python3 (実際のpath)/signaling.py
-
-を追記すれば、PC起動時に自動でwebrtc,webサーバーが起動します
-

@@ -6,7 +6,7 @@ let localStream = null;
 let peerConnection = null;
 
 // シグナリングサーバへ接続する
-const wsUrl = 'wss://192.168.0.24:8000/';
+const wsUrl = 'wss://' + location.hostname + ':8000/';
 const ws = new WebSocket(wsUrl);
 ws.onopen = function(evt) {
     console.log('ws open()');
